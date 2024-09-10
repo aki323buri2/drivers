@@ -13,9 +13,11 @@
   
   2. **別のPCでドライバーをインストール**:
      ```
-     pnputil /add-driver C:\ExportedDrivers\*.inf /install
+     pnputil /add-driver C:\ExportedDrivers\*.inf /subdirs /install 
      ```
      これにより、フォルダー内のすべての `.inf` ドライバーが1回のコマンドでインストールされます。
+
+     ※`/subdirs` を忘れないように！
 
 この方法を使えば、**1台1台のデバイスドライバーをワンコマンドで手動処理**することができます。エクスポートした `.INF` ファイル群を別のPCに復元するには、正しい形式でエクスポートされていれば問題なく動作します。
 
